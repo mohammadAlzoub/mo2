@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #00aaff, #0066cc);
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-bottom: 5px solid #00aaff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* Container for content */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Skill List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #00aaff;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            background-color: #007bff;
+            transform: translateY(-5px);
+        }
+
+        /* Form Styling */
+        form {
+            margin-top: 2rem;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #333;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #00aaff;
+            box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #ccc;
+            background-color: #333;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hire Me</h1>
+        <p>Let's build something amazing together! Professional web development services for you.</p>
+    </header>
+
+    <div class="container">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React & Node.js</li>
+            <li>Web Design (Responsive)</li>
+            <li>Backend Development (Express)</li>
+        </ul>
+
+        <h2>Contact Me</h2>
+        <form action="send-message.php" method="post">
+            <div>
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div>
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div>
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Back to Home Button -->
+        <a href="index.html">
+            <button class="btn" style="width: auto; margin-top: 1.5rem;">Back to Home</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mohammad Alzoubi. All rights reserved. | <a href="mailto:mohammad21977@icloud.com.com">Email me</a></p>
+    </footer>
+</body>
+</html>
